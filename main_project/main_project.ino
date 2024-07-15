@@ -97,7 +97,6 @@ void loop() {
   
   float t = dht.readTemperature();    // สำหรับการอ่านค่าอุณหภูมิเป็น
   transfer_serial.println(t);  
-
   
   int a = digitalRead(sw2);
   
@@ -125,7 +124,6 @@ void loop() {
       stateserCA = true;
       return;
     }
-
     
     //autoปิดประตูเรียบร้อย
     else {
@@ -162,8 +160,6 @@ void loop() {
     lcd.clear();
     lcd.setCursor(0,0);
     lcd.print("Mode = Auto");
-
-
     
     Serial.println("Auto mode");
     onetimeAU = 1;
@@ -235,9 +231,7 @@ void loop() {
           stateserOA = false;
           return;
         }
-        
       }
     }
-    
   }
 }
